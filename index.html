@@ -125,7 +125,7 @@
             display: none;
           }
           label {
-            flex: 1;
+            flex-grow: 1;
             text-align: center;
             display: inline-block;
             background-color: white;
@@ -149,16 +149,19 @@
     <footer>
       <div>
         <label for="ft-r-1">
-          <input type="radio" name="ft-r" id="ft-r-1" data-card="credit" checked />신용 일반
+          <input type="radio" name="ft-r" id="ft-r-1" data-card="credit" checked />신용
         </label>
         <label for="ft-r-2">
-          <input type="radio" name="ft-r" id="ft-r-2" data-card="plcc" />신용 제휴
+          <input type="radio" name="ft-r" id="ft-r-2" data-card="mile" />마일리지
         </label>
         <label for="ft-r-3">
           <input type="radio" name="ft-r" id="ft-r-3" data-card="prm" />프리미엄
         </label>
         <label for="ft-r-4">
-          <input type="radio" name="ft-r" id="ft-r-4" data-card="check" />체크카드
+          <input type="radio" name="ft-r" id="ft-r-4" data-card="plcc" />제휴
+        </label>
+        <label for="ft-r-5">
+          <input type="radio" name="ft-r" id="ft-r-5" data-card="check" />체크
         </label>
       </div>
       <script>
@@ -225,9 +228,9 @@
             '국내/해외 가맹점 0.2% 적립',
             '전월 실적 조건, 적립한도 제한 없음',
             '우리WON페이 0.5% 추가 적립',
-            ' ',
+            '',
             '마트/슈퍼/커피/주유 1% 특별 적립',
-            '마트, 스타벅스, SK주유소',
+            '이마트, 스타벅스, SK주유소',
           ],
         },
         {
@@ -282,6 +285,26 @@
             '디지털구독 30% 청구할인<br>※ 전월실적 50만원 이상 시 제공',
             '2~3개월 무이자 할부서비스',
             '※ 전월실적 조건 없음',
+          ],
+        },
+        {
+          id: 500039,
+          name: 'S-OIL 주유 400 우리카드',
+          card: 'plcc',
+          img: [
+            'https://m.wooricard.com/webcontent/cdPrdImgFileList/2026/4/22/f45f09bc-63df-43b9-9dea-27540914ccae.png',
+          ],
+          fee: 25000,
+          release: '2026-05-01',
+          contents: [
+            'S-OIL 주유 청구할인',
+            '※ 전월실적 40만원 이상시 제공',
+            '편의점 7% 청구할인',
+            '※ 전월실적 40만원 이상시 제공',
+            '커피 7% 청구할인',
+            '※ 전월실적 40만원 이상시 제공',
+            'OTT 자동납부 7% 청구할인',
+            '※ 전월실적 40만원 이상시 제공',
           ],
         },
         {
@@ -689,7 +712,7 @@
         {
           id: 104154,
           name: '우리카드 MILE&POINT',
-          card: 'credit',
+          card: 'mile',
           img: [
             'https://m.wooricard.com/webcontent/cdPrdImgFileList/2025/9/1/2e88e914-91f7-458c-8afc-c2908ae8e14d.png',
           ],
@@ -1008,7 +1031,7 @@
           ],
           fee: 0,
           release: '2024-08-26',
-          contents: ['화물차우대주유소 안내', ' ', '주유할인 서비스', ''],
+          contents: ['화물차우대주유소 안내', '', '주유할인 서비스'],
         },
         {
           id: 103727,
@@ -1113,6 +1136,7 @@
           id: 103418,
           name: 'CORPORATE Soho',
           card: 'credit',
+          corp: true,
           img: [
             'https://m.wooricard.com/webcontent/cdPrdImgFileList/2025/8/14/3c5070b7-59ce-45bf-b1f5-a7d11abf4436.png',
           ],
@@ -1229,6 +1253,23 @@
           ],
         },
         {
+          id: 102733,
+          name: 'CORPORATE Mile SKYPASS 개인사업자',
+          card: 'mile',
+          corp: true,
+          img: [
+            'https://m.wooricard.com/webcontent/cdPrdImgFileList/2025/8/14/3463b084-c18d-46e9-a48c-418328d1b2c3.png',
+          ],
+          fee: 10000,
+          release: '2023-12-23',
+          contents: [
+            'SKYPASS 마일리지 적립 서비스',
+            '국내외 가맹점 이용금액 1,500원당 스카이패스 1마일리지 적립',
+            '주유 할인',
+            'HD현대오일뱅크, S-OIL(LPG충전소 제외) 리터당 20원 청구할인',
+          ],
+        },
+        {
           id: 102719,
           name: '카드의정석 DON CHECK',
           card: 'check',
@@ -1322,6 +1363,18 @@
           ],
         },
         {
+          id: 102996,
+          name: 'CORPORATE Point',
+          card: 'credit',
+          corp: true,
+          img: [
+            'https://m.wooricard.com/webcontent/cdPrdImgFileList/2025/8/14/10806d04-de58-4dd9-9365-3cb2e3112b27.png',
+          ],
+          fee: 5000,
+          release: '2023-09-20',
+          contents: ['포인트 적립 서비스', '※ 전월실적 조건 없음'],
+        },
+        {
           id: 102492,
           name: '카드의정석 SHOPPING+',
           card: 'credit',
@@ -1360,7 +1413,7 @@
         {
           id: 102488,
           name: '카드의정석 EVERY MILE SKYPASS',
-          card: 'credit',
+          card: 'mile',
           img: [
             'https://m.wooricard.com/webcontent/cdPrdImgFileList/2025/8/18/82421e2c-4447-42b4-88bc-2cf410cf511c.png',
           ],
@@ -1499,7 +1552,7 @@
           behavior: 'smooth',
         })
         document.querySelector('#root').innerHTML = null
-        db.forEach(({ id, img, name, card, fee, release, contents }) => {
+        db.forEach(({ id, img, name, card, fee, release, contents, corp }) => {
           let imgnode = ''
           img.forEach(e => {
             imgnode += `<img src="${e}" loading="lazy" height="160">`
@@ -1510,6 +1563,9 @@
           })
           const fee_ =
             Number(fee) > 99999 ? fee / 10000 + '만원' : fee == 0 ? '없음' : fee / 1000 + ',000원'
+          const web = corp
+            ? `https://m.wooricard.com/dcmw/yh2/bcd/bcd01/cdadv/M2BCD201S01.do?cdPrdCd=${id}`
+            : `https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?recomNo=${id}`
           if (type == card) {
             document.querySelector('#root').innerHTML +=
               `<div data-container="card" data-card="${card}">
@@ -1521,7 +1577,7 @@
                 </div>
                 <div class="card-bottom">${contentsNode}</div>
                 <div class="card-url">
-                  <a href="https://m.wooricard.com/dcmw/yh1/crd/crd01/M1CRD101S02.do?recomNo=${id}" target="_blank">모바일웹</a>
+                  <a href="${web}" target="_blank">홈페이지</a>
                   <a href="https://m.wooricard.com/dcmw/yh1/mlk/mlk05/M1MLK205S02.do?cdPrdCd=${id}" target="_blank">상품안내장</a>
                 </div>
               </div>`
