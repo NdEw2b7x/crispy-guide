@@ -40,6 +40,64 @@
     <script>
       const db = [
         {
+          id: 500107,
+          name: '카드의정석2 SOLID',
+          card: 'credit',
+          img: [
+            'https://m.wooricard.com/webcontent/cdPrdImgFileList/2026/8/26/16906000-edbd-4774-98c1-4383524ab485.png',
+          ],
+          fee: 15000,
+          release: '2026-09-30',
+          contents: [
+            '국내/해외 가맹점 1.2% 청구할인',
+            '※ 전월 실적 조건 없음 ※ 할인 한도 제한 없음',
+            '국내 가맹점 2~3개월 무이자 할부 제공',
+            '※ 건당 5만원 이상 결제 시',
+          ],
+        },
+        {
+          id: 500104,
+          name: '카드의정석2 SPIKE CHECK',
+          card: 'check',
+          img: [
+            'https://m.wooricard.com/webcontent/cdPrdImgFileList/2026/9/15/ee4888c4-860c-4060-9f08-85fffa9ad5fe.png',
+            'https://m.wooricard.com/webcontent/cdPrdImgFileList/2026/9/15/1ff7da53-abc9-4df2-8c64-67d2657aead1.png',
+            'https://m.wooricard.com/webcontent/cdPrdImgFileList/2026/9/15/7917bfe3-22fa-423a-bc37-1a9cc2315cad.png',
+            'https://m.wooricard.com/webcontent/cdPrdImgFileList/2026/9/15/54914944-6dc7-4522-a2b9-6d1b6fdf3a27.png',
+          ],
+          fee: 0,
+          release: '2026-09-10',
+          contents: [
+            '프로배구 입장권 30% 캐시백',
+            '※전월실적 20만원 이상 시 제공',
+            '배구 직관을 위한 식음매장 및 MD 30% 캐시백',
+            '※전월실적 20만원 이상 시 제공',
+            '생활비 (외식/편의점/교통/티켓예매) 3% 캐시백',
+            '※전월실적 20만원 이상 시 제공',
+          ],
+        },
+        {
+          id: 500103,
+          name: '카드의정석2 SPIKE',
+          card: 'plcc',
+          img: [
+            'https://m.wooricard.com/webcontent/cdPrdImgFileList/2026/9/11/9e8809a5-ad7b-4105-a2c5-d91059e98030.png',
+            'https://m.wooricard.com/webcontent/cdPrdImgFileList/2026/9/11/2b62baee-0846-4fd5-bf6c-af353ecb9242.png',
+            'https://m.wooricard.com/webcontent/cdPrdImgFileList/2026/9/11/58db6528-6dd6-4f58-92c4-e49d21ca5ead.png',
+            'https://m.wooricard.com/webcontent/cdPrdImgFileList/2026/9/15/aee6e9ed-41f2-4487-86ea-1864d792f6ac.png',
+          ],
+          fee: 22000,
+          release: '2026-09-03',
+          contents: [
+            '프로배구 입장권 50% 청구할인',
+            '※전월실적 30만원 이상 시 제공',
+            '배구 직관을 위한 식음매장 및 MD 50% 청구할인',
+            '※전월실적 30만원 이상 시 제공',
+            '생활비 (외식/편의점/교통/티켓예매) 5% 청구할인',
+            '※전월실적 30만원 이상 시 제공',
+          ],
+        },
+        {
           id: 500095,
           name: '바디프랜드 Platinum 우리카드',
           card: 'plcc',
@@ -553,7 +611,7 @@
           release: '2025-11-28',
           contents: [
             '해외/여행준비 2~6% 적립',
-            '※ 전월 이용실적 50만원 이상 ※ 월 통합 적립한도 10만점 (단, 해외영역 적립한도 3만점)',
+            '※ 전월 이용실적 50만원 이상<br>※ 월 통합 적립한도 10만점 (단, 해외영역 적립한도 3만점)',
             '간편결제,인앱결제 3% 할인',
             '※ 전월 이용실적 50만원 이상 ※ 월 할인한도 3천원',
             '국내 공항 라운지 무료 이용',
@@ -804,28 +862,6 @@
             '우리WON모바일 통신요금 할인',
             '전월실적에 따라 최대 1.5만원 할인 (전월실적 최소 40만원 부터)',
           ],
-        },
-        {
-          id: 104022,
-          name: '우리 기후동행카드(신용)',
-          card: 'credit',
-          img: [
-            'https://m.wooricard.com/webcontent/cdPrdImgFileList/2025/1/23/92cfb383-11d1-41ce-ba6e-4b37226e4493.png',
-          ],
-          fee: 12000,
-          release: '2025-02-12',
-          contents: ['할인 혜택', '전월 국내외 가맹점 이용실적 20만원 이상 시'],
-        },
-        {
-          id: 104023,
-          name: '우리 기후동행카드(체크)',
-          card: 'check',
-          img: [
-            'https://m.wooricard.com/webcontent/cdPrdImgFileList/2025/1/23/3b07701d-05d5-4190-86dd-94d87e3aab1c.png',
-          ],
-          fee: 0,
-          release: '2025-02-12',
-          contents: ['생활 5% 캐시백 서비스', '전월 국내외 가맹점 이용실적 25만원 이상 시'],
         },
         {
           id: 102864,
@@ -1295,12 +1331,12 @@
         },
         {
           id: 102492,
-          name: '카드의정석 SHOPPING+',
+          name: '카드의정석2 SHOPPING+',
           card: 'credit',
           img: [
-            'https://m.wooricard.com/webcontent/cdPrdImgFileList/2025/2/25/aaf3b635-11c5-4671-90e8-c01d80d7bb56.png',
+            'https://m.wooricard.com/webcontent/cdPrdImgFileList/2026/9/1/1b80f9f2-00d6-4632-a729-d55312125cfe.png',
           ],
-          fee: 12000,
+          fee: 10000,
           release: '2023-09-04',
           contents: [
             '온라인 쇼핑 10% 청구할인',
